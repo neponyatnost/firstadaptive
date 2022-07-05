@@ -44,7 +44,7 @@ body {
     justify-content: center;
     border: 5px solid rgba(7, 223, 219, 0.468);
     margin: 10px;
-    transition: 0.3s all;
+    transition: 0.3s ease-in-out;
 }
 
 .heading__1 {
@@ -134,7 +134,8 @@ body {
 
 .blue {
     background-color: blue;
-    transition: 0.3s all;
+    transition: 0.3s ease-in-out;
+    opacity: 0.5;
 }
 
 .blue b {
@@ -142,7 +143,7 @@ body {
 }
 .red {
     background-color: red;
-    transition: 0.3s all;
+    transition: 0.3s ease-in-out;
 }
 
 .hide {
@@ -152,3 +153,47 @@ body {
 .form {
     text-align: center;
 }
+
+label {
+    font-size: 25px;
+}
+
+::placeholder {
+    text-align: center;
+    color: #fff;
+    opacity: 0.4;
+    transition: all 0.5s ease-in-out;
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid rgba(52, 58, 173, 0.587);
+    max-width: 100%;
+    color: #fff;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(52, 58, 173, 0.587);
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  
+  :focus::-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-ms-input-placeholder {
+    color: transparent
+  }
