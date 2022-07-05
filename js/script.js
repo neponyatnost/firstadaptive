@@ -1,18 +1,5 @@
 "use strict"
 
-let item = document.querySelector('.content > div');
-let input = document.querySelector('input');
-let button = document.querySelector('.button');
-let item1 = document.getElementById('item1');
-let heading = document.querySelector('.heading');
-button.onclick = function() {
-    item.classList.toggle('blue');
-    item1.classList.toggle('red');
-    heading.classList.toggle('heading__1');
-  }
-
-  console.log(input.value);
-
   let form = document.querySelector('form');
 
   form.onsubmit = function(evt) {
@@ -24,3 +11,17 @@ button.onclick = function() {
     }
     input.value = '';
   };
+
+
+  let items = document.querySelectorAll('.item');
+items.forEach(function(el) {
+  el.addEventListener('click', function(ev) {
+    ev.stopPropagation();
+    items.forEach(el => { if (el != this) { el.classList.remove('blue') }; });
+    this.classList.toggle('blue');
+  });
+});
+
+document.addEventListener('click', function() {
+  items.forEach(el => el.classList.toggle('blue', false));
+});
