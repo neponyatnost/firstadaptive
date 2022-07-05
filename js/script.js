@@ -1,6 +1,7 @@
 "use strict"
 
-  let form = document.querySelector('form');
+let form = document.querySelector('form');
+let heading = document.querySelector('.heading');
 
   form.onsubmit = function(evt) {
     if (input.value == 'хуй' || input.value == 'Хуй' || input.value == 'Пизда' || input.value == 'пизда') {
