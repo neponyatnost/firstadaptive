@@ -8,9 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="fixed-overlay">
+        <div class="modal">
+            <span class="modal__close">X</span>
+            <form action="#" class="modal__form">
+                <input autocomplete="off" type="text" name="user__name" id="user__name" placeholder="Ваше имя">
+                <input autocomplete="off" type="email" name="user__email" id="user__email" placeholder="Ваш E-Mail">
+                <input autocomplete="off" type="text" name="user__tel" id="user__tel" placeholder="Ваш телефон" aria-valuemax="11" aria-valuemin="10">
+                <button type="submit" class="modal__submit">Отправить</button>
+            </form>
+        </div>
+    </div>
     <div class="container">
         <div class="header">
-            <a href="https://neponyatnost.github.io/firstadaptive/">Главная</a>
             <h1 class="heading">Заголовок</h1>
         </div>
         <form action="#" class="form">
@@ -21,6 +31,7 @@
     </div>
     <main class="main">
         <div class="container">
+            <a href="#" class="modal__open">Открыть модальное окно</a>
             <div class="content">
                 <div class="item" id="item">
                     <p>Content</p>
