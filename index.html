@@ -56,19 +56,19 @@
     </footer>
     
     <div id="popup" class="popup">
-        <div class="popup__body">
+        <div class="popup__body" id="popup__form">
             <div class="popup__content">
                 <a href="#header" class="popup__close close-popup">X</a>
                 <div class="popup__title">Заполните форму</div>
                 <div class="popup__text">
-                    <form action="#" method="get" class="popup__form" id="popup__form">
+                    <form action="#" method="post" class="popup__form">
                         <div class="popup__item">
                             <label for="name" class="popup__label">Имя (обязательно):</label>
-                            <input id="name" name="popupName" type="text" class="popup__input">
+                            <input id="name" name="popupName" type="text" class="popup__input _req">
                         </div>
                         <div class="popup__item">
                             <label for="mail" class="popup__label">E-mail (обязательно):</label>
-                            <input id="mail" name="popupMail" type="text" class="popup__input">
+                            <input id="mail" name="popupMail" type="text" class="popup__input _req _email">
                         </div>
                         <div class="popup__item">
                             <span class="options__title">Пол:</span>
@@ -86,6 +86,12 @@
                         <div class="popup__item">
                             <label for="message" class="popup__label">Сообщение:</label>
                             <textarea name="message" id="message" class="popup__input"></textarea>
+                        </div>
+                        <div class="popup__item">
+                            <div class="checkbox">
+                                <input type="checkbox" id="formAgreement" name="agreement" class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label">Согласен на что-то там в соответствии с чем-то там! (Обязательно)</label>
+                            </div>
                         </div>
                         <button class="popup__button" type="submit">Отправить</button>
                     </form>
@@ -106,5 +112,6 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/popups.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>
