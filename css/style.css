@@ -135,52 +135,10 @@ body {
 
 .blue {
     background-color: blue;
-    transition: 0.3s ease-in-out;
-    opacity: 0.5;
 }
 
-.blue b {
-    display: block;
-}
 .red {
     background-color: red;
-    transition: 0.3s ease-in-out;
-}
-
-.hide {
-    display: none;
-}
-
-.form {
-    text-align: center;
-}
-
-label {
-    font-size: 25px;
-}
-
-.input::placeholder {
-    text-align: center;
-    color: #fff;
-    opacity: 0.4;
-    transition: all 0.5s ease-in-out;
-}
-
-input {
-    text-align: center;
-    height: 30px;
-    font-size: 25px;
-    border: none;
-    background: none;
-    border-bottom: 1px solid rgba(52, 58, 173, 0.587);
-    max-width: 100%;
-    color: rgba(7, 223, 219, 0.468);
-}
-
-input:focus {
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(52, 58, 173, 0.587);
 }
 
 :focus::-webkit-input-placeholder {
@@ -197,55 +155,6 @@ input:focus {
   
   :focus:-ms-input-placeholder {
     color: transparent
-}
-
-  .modal {
-    width: 300px;
-    height: 300px;
-    border: 1px solid rgb(67, 59, 0);
-    text-align: center;
-    padding: 10px;
-    display: none;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    z-index: 2;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-#user__name {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 1px solid black;
-    color: gray;
-}
-
-#user__email {
-    margin-bottom: 30px;
-    border: 1px solid black;
-    color: gray;
-}
-
-#user__tel {
-    margin-bottom: 50px;
-    border: 1px solid black;
-    color: gray;
-}
-
-.modal__close {
-    cursor: pointer;
-    user-select: none;
-    color: #000;
-    transition: all 0.3s;
-    padding: 5px;
-    margin-left: 260px;
-}
-
-.modal__close:hover {
-    color: rgb(100, 100, 100);
 }
 
 /* =========================== */
@@ -273,7 +182,7 @@ input:focus {
 .popup.open .popup__content {
     opacity: 1;
     transition: all 0.8s ease 0s;
-    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+    transform: perspective(400px) translate(0px, 0%) rotateX(0deg);
 }
 
 .popup__body {
@@ -282,7 +191,6 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-    transition: all 0.8s ease 0s;
 }
 
 .popup__content {
@@ -293,7 +201,7 @@ input:focus {
     position: relative;
     transition: all 0.8s ease 0s;
     opacity: 0;
-    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+    transform: perspective(400px) translate(0px, -100%) rotateX(135deg) rotateY(115deg);
 }
 
 .popup__close {
@@ -313,3 +221,4 @@ input:focus {
 body.lock {
     overflow: hidden;
 }
+
