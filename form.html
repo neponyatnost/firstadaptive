@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close close-popup">X</a>
+                <div class="popup__title">Заполните форму</div>
+                <div class="popup__text">
+                    <form action="#" method="get" class="popup__form" id="popup__form">
+                        <div class="popup__item">
+                            <label for="name" class="popup__label">Имя (обязательно):</label>
+                            <input id="name" name="popupName" type="text" class="popup__input">
+                        </div>
+                        <div class="popup__item">
+                            <label for="mail" class="popup__label">E-mail (обязательно):</label>
+                            <input id="mail" name="popupMail" type="text" class="popup__input">
+                        </div>
+                        <div class="popup__item">
+                            <span class="options__title">Пол:</span>
+                            <div class="options">
+                                <div class="options__item">
+                                    <input type="radio" name="gender" id="maleGender" class="options__input" value="male" checked>
+                                    <label for="maleGender" class="options__label"><span>Мужской</span></label>
+                                </div>
+                                <div class="options__item">
+                                    <input type="radio" name="gender" id="femaleGender" class="options__input" value="female">
+                                    <label for="femaleGender" class="options__label"><span>Женский</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__item">
+                            <label for="message" class="popup__label">Сообщение:</label>
+                            <textarea name="message" id="message" class="popup__input"></textarea>
+                        </div>
+                        <button class="popup__button" type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
